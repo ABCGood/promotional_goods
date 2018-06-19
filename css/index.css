@@ -1,0 +1,205 @@
+ody{
+    margin: 0 auto;
+    background-color: #eeeeee;
+    line-height: 20px;
+}
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+/*超出3行显示省略号*/
+.over3{
+    text-decoration: none;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+}
+/*超出2行显示省略号*/
+.over2{
+    text-decoration: none;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+/*超出1行显示省略号*/
+.over1{
+    text-decoration: none;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+}
+
+/* 顶部图片 */
+.topImg img{
+    width: 100%;
+    height: 150px;
+}
+.topTitle{
+    font-size: 12px;
+    background-color: #ffffff;
+    background-color: rgba(225,225,225,0.5);
+    position: absolute;
+    padding: 0 20px;
+    border-radius:10px;
+    line-height: 20px;
+    /*margin-left: 20%;*/
+    margin-left: 25%;
+    margin-top: 20px;
+    /*margin-right: 20%;*/
+}
+
+/* 内容 */
+.contentBg{
+    /*width: 100%;*/
+    padding: 5px 10px;
+}
+.contentBgW{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+.contentTop{
+    height: 25px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eeeeee;
+}
+/* 为您优选 */
+.preferredContent{
+    /*padding: 0 5px;*/
+    margin-top: 10px;
+    background-color: white;
+    /*width: 100%;*/
+}
+.preferredContentTitle{
+    height: 30px;
+    display: -webkit-inline-flex;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    line-height: 28px;
+    font-size: 16px;
+    /*font-weight: 800;*/
+}
+.preferredContentTitle img{
+    padding: 0 5px;
+    width: 12px;
+}
+.preferredContentList{
+    line-height: 20px;
+    padding: 3px 8px 8px 8px;
+}
+.preferredContentListTitle img{
+    width: 18px;
+}
+.preferredContentListTitle1{
+    font-size: 14px;
+    /*font-weight: 800;*/
+}
+.preferredContentListTitle2 p{
+    font-size: 12px;
+    float: right;
+    color: #666666;
+}
+.preferredConListContent{
+    margin: 15px 10px 5px 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.preferredConListConImg{
+    width: 100px;
+    height: 100px;
+    background-color: #cf292e;
+}
+.preferredConListConImg img{
+    width: 100%;
+    height: 100%;
+}
+.preferredConListConImg1{
+    position: absolute;
+}
+.preferredConListConImg1 img{
+    width: 55px;
+}
+.preferredConListConFont{
+    position: absolute;
+    margin-left: 105px;
+    /*padding-right: 5px;*/
+    padding-right: 10px;
+}
+.preferredConListConFontTitle{
+    font-size: 14px;
+    line-height: 20px;
+    /*font-weight: 800;*/
+}
+.preferredConListConFontxq{
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+}
+.preferredConListConFontxq span{
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 1px 2px;
+    margin-right: 2px;
+}
+.preferredConListConIcon span{
+    font-size: 12px;
+    color: white;
+    background-color: #c1c1c1;
+    border: none;
+    border-radius: 2px;
+    padding: 1px 2px;
+    margin-right: 3px;
+}
+.preferredConListConFontBottom{
+    font-size: 12px;
+    padding-top: 3px;
+    /*font-size: 14px;*/
+    line-height: 20px;
+    color: #666666;
+}
+.preferredConListConFontBottom .first{
+    color: #cf292e;
+    line-height: 20px;
+}
+.preferredConListConFontBottom .fontBtn{
+    position: absolute;
+    right: 15px;
+    line-height: 20px;
+    background-color: #cf292e;
+    color: white;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+.pmIcon{
+    background-color: #cf292e;
+    color: white;
+    padding: 1px 10px;
+    line-height: 20px;
+    border-radius:  0 10px 10px 0;
+    /*margin-left: -5px;*/
+    font-size: 12px;
+}
+
+.listContentBottom{
+    font-size: 12px;
+    color: #c1c1c1;
+    padding: 0 10px 10px 10px;
+    line-height: 20px;
+    border-bottom: 2px solid #eeeeee;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>限时福利</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="eleme-ui/index.css" />
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+</head>
+<style>
+    input{
+        border: none;
+    }
+    .el-select .el-input .el-input__icon{
+        width: 15px;
+    }
+    .el-input__icon+.el-input__inner{
+        padding-right: 0;
+    }
+    .el-select .el-input__inner{
+        padding-right: 0;
+    }
+    /*.el-cascader span{*/
+        /*padding-left: 30%;*/
+    /*}*/
+    /*.layui-flow-more{*/
+        /*margin: 10px 0 0 0;*/
+        /*padding-bottom: 10px;*/
+    /*}*/
+    .el-select-dropdown{
+        width: 97%;
+    }
+    /*.el-cascader-menu{*/
+        /*!*width: 105px;*!*/
+        /*width: 33.3%;*/
+        /*border:1px solid #d1dbe5;*/
+        /*box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 0 6px rgba(0,0,0,.04);*/
+    /*}*/
+    /*.el-cascader-menus{*/
+        /*width: 100%;*/
+        /*background: none;*/
+        /*border: none;*/
+        /*box-shadow: none;*/
+        /*!*background-color: #1E9FFF;*!*/
+    /*}*/
+</style>
+<body>
+<!-- 顶部图片 -->
+<div class="topImg">
+    <div class="topTitle">消费返还，最高返100%</div>
+    <img src="imgs/1.jpg">
+</div>
+
+<!-- 内容 -->
+<div class="contentBg" style="background-color: #00923f;">
+    <div class="contentBgW">
+        <div class="contentTop">
+            <div id="myVue1" style="position: absolute">
+                <template>
+                    <el-select v-model="value" clearable placeholder="全城" style="width: 30%">
+                        <el-option v-for="item in CostInfo" :key="item.value" :label="item.label" :value="item.value">
+                        </el-option>
+                    </el-select>
+                </template>
+            </div>
+            <div id="myVue2" style="position: absolute;margin-left: 18%;">
+                <template>
+                    <el-select v-model="value" clearable placeholder="全部分类" style="width: 45%">
+                        <el-option v-for="item in CostInfo" :key="item.value" :label="item.label" :value="item.value">
+                        </el-option>
+                    </el-select>
+                </template>
+            </div>
+            <div id="myVue3" style="position: absolute;margin-left: 45%;">
+                <template>
+                    <el-select v-model="value" clearable placeholder="智能排序" style="width: 49%">
+                        <el-option v-for="item in CostInfo" :key="item.value" :label="item.label" :value="item.value">
+                        </el-option>
+                    </el-select>
+                </template>
+            </div>
+            <div id="myVue4" style="margin-left: 77%;">
+                <template>
+                    <el-select v-model="value" clearable placeholder="筛选" style="width: 78%">
+                        <el-option v-for="item in CostInfo" :key="item.value" :label="item.label" :value="item.value">
+                        </el-option>
+                    </el-select>
+                </template>
+            </div>
+        </div>
+        <div>
+            <div class="preferredContent">
+                <div>
+                    <div class="preferredContentList">
+                        <div class="preferredContentListTitle">
+                            <div class="layui-col-xs1">
+                                <img src="imgs/8.png">
+                            </div>
+                            <div class="preferredContentListTitle1 layui-col-xs9">
+                                <p>彬兄麻辣酸菜鱼</p>
+                            </div>
+                            <div class="preferredContentListTitle2 layui-col-xs2">
+                                <p>500m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preferredConListContent">
+                        <div class="preferredConListConImg1">
+                            <img src="imgs/10.png">
+                        </div>
+                        <div class="preferredConListConFont">
+                            <div class="preferredConListConFontTitle over1">
+                                <p style="position: absolute">砂锅牛肉煲</p>
+                                <span style="line-height: 20px;padding: 1px 2px;font-size: 12px;background-color: #bf9f62;color: white;margin-left: 75px">补贴10元</span>
+                            </div>
+                            <div class="over2 preferredConListConFontxq">
+                                <p><span style="color: #f4c547;border: 1px solid #f4c547;">到店消费</span>店内提供免费WiFi,提供停车位，婴儿椅</p>
+                            </div>
+                            <div class="preferredConListConIcon">
+                                <span>早餐</span>
+                                <span>微辣</span>
+                                <span>一人餐</span>
+                                <span>无需预约</span>
+                            </div>
+                            <div class="preferredConListConFontBottom">
+                                <span class="first">￥80</span><span>/份 | 已售100</span><span class="fontBtn">立即抢购</span>
+                            </div>
+                        </div>
+                        <div class="preferredConListConImg">
+                            <img src="imgs/2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="preferredContentList">
+                        <div class="preferredContentListTitle">
+                            <div class="layui-col-xs1">
+                                <img src="imgs/8.png">
+                            </div>
+                            <div class="preferredContentListTitle1 layui-col-xs9">
+                                <p>老三牛肉店提供</p>
+                            </div>
+                            <div class="preferredContentListTitle2 layui-col-xs2">
+                                <p>500m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preferredConListContent">
+                        <div class="preferredConListConImg1">
+                            <img src="imgs/11.png">
+                        </div>
+                        <div class="preferredConListConFont">
+                            <div class="preferredConListConFontTitle over1">
+                                <p style="position: absolute">砂锅牛肉煲</p>
+                                <span style="line-height: 20px;padding: 1px 2px;font-size: 12px;background-color: #bf9f62;color: white;margin-left: 75px">补贴10元</span>
+                            </div>
+                            <div class="over2 preferredConListConFontxq">
+                                <p><span style="color: #c08745;border: 1px solid #c08745;">快递包邮</span>店内提供免费WiFi,提供停车位，婴儿椅</p>
+                            </div>
+                            <div class="preferredConListConIcon">
+                                <span>早餐</span>
+                                <span>微辣</span>
+                                <span>一人餐</span>
+                                <span>无需预约</span>
+                            </div>
+                            <div class="preferredConListConFontBottom">
+                                <span class="first">￥80</span><span>/份 | 已售100</span><span class="fontBtn">立即抢购</span>
+                            </div>
+                        </div>
+                        <div class="preferredConListConImg">
+                            <img src="imgs/2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="preferredContentList">
+                        <div class="preferredContentListTitle">
+                            <div class="layui-col-xs1">
+                                <img src="imgs/8.png">
+                            </div>
+                            <div class="preferredContentListTitle1 layui-col-xs9">
+                                <p>彬兄麻辣酸菜鱼</p>
+                            </div>
+                            <div class="preferredContentListTitle2 layui-col-xs2">
+                                <p>500m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preferredConListContent">
+                        <div class="preferredConListConImg1">
+                            <img src="imgs/10.png">
+                        </div>
+                        <div class="preferredConListConFont">
+                            <div class="preferredConListConFontTitle over1">
+                                <p style="position: absolute">砂锅牛肉煲</p>
+                                <span style="line-height: 20px;padding: 1px 2px;font-size: 12px;background-color: #bf9f62;color: white;margin-left: 75px">补贴10元</span>
+                            </div>
+                            <div class="over2 preferredConListConFontxq">
+                                <p><span style="color: #f4c547;border: 1px solid #f4c547;">到店消费</span>店内提供免费WiFi,提供停车位，婴儿椅</p>
+                            </div>
+                            <div class="preferredConListConIcon">
+                                <span>早餐</span>
+                                <span>微辣</span>
+                                <span>一人餐</span>
+                                <span>无需预约</span>
+                            </div>
+                            <div class="preferredConListConFontBottom">
+                                <span class="first">￥80</span><span>/份 | 已售100</span><span class="fontBtn">立即抢购</span>
+                            </div>
+                        </div>
+                        <div class="preferredConListConImg">
+                            <img src="imgs/2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="preferredContentList">
+                        <div class="preferredContentListTitle">
+                            <div class="layui-col-xs1">
+                                <img src="imgs/8.png">
+                            </div>
+                            <div class="preferredContentListTitle1 layui-col-xs9">
+                                <p>老三牛肉店提供</p>
+                            </div>
+                            <div class="preferredContentListTitle2 layui-col-xs2">
+                                <p>500m</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preferredConListContent">
+                        <div class="preferredConListConImg1">
+                            <img src="imgs/11.png">
+                        </div>
+                        <div class="preferredConListConFont">
+                            <div class="preferredConListConFontTitle over1">
+                                <p style="position: absolute">砂锅牛肉煲</p>
+                                <span style="line-height: 20px;padding: 1px 2px;font-size: 12px;background-color: #bf9f62;color: white;margin-left: 75px">补贴10元</span>
+                            </div>
+                            <div class="over2 preferredConListConFontxq">
+                                <p><span style="color: #c08745;border: 1px solid #c08745;">快递包邮</span>店内提供免费WiFi,提供停车位，婴儿椅</p>
+                            </div>
+                            <div class="preferredConListConIcon">
+                                <span>早餐</span>
+                                <span>微辣</span>
+                                <span>一人餐</span>
+                                <span>无需预约</span>
+                            </div>
+                            <div class="preferredConListConFontBottom">
+                                <span class="first">￥80</span><span>/份 | 已售100</span><span class="fontBtn">立即抢购</span>
+                            </div>
+                        </div>
+                        <div class="preferredConListConImg">
+                            <img src="imgs/2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/vue.js"></script>
+<script type="text/javascript" src="eleme-ui/index.js" ></script>
+<script src="js/jquery.min.js"></script>
+<script src="layui/layui.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="layui/lay/modules/laytpl.js"></script>
+</body>
+</html>
