@@ -49,6 +49,7 @@ a{
     height: 150px;
 }
 .topTitle{
+    z-index: 100;
     font-size: 12px;
     background-color: #ffffff;
     background-color: rgba(225,225,225,0.5);

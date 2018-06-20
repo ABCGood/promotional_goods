@@ -1,3 +1,7 @@
+var mySwiper = new Swiper('.swiper-container',{
+    autoplay: true,
+});
+
 var Main1 = {
     data() {
         return {
